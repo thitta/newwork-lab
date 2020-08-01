@@ -18,7 +18,7 @@ cd build
 ./main
 ```
 
-On other systems, `CMakeLists.txt` is provided.
+In other systems, use `CMakeLists.txt`.
 
 ### Reference
 

@@ -4,7 +4,7 @@
 const static char *ACCEPT_METHODS = "GET";
 const static char *ACCEPT_PROTO = "HTTP";
 const static char *ACCEPT_PROTO_VER = "1.1 2.0 3.0";
-const static char *ROOT_PATH = "../http";
+const static char *ROOT_PATH = "../static";
 const static char *ERROR_PAGE = "error.html";
 const static char *INDEX_PAGE = "index.html";
 
