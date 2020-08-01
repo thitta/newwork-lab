@@ -131,7 +131,7 @@ int main() {
   // check static dir
   DIR *dir = opendir(ROOT_PATH);
   if (dir == NULL) {
-    printf("...can't access static directory: %s, you can set the path in http.h\n", ROOT_PATH);
+    fprintf(stderr, "...can't access static directory: %s, you can set the path in http.h\n", ROOT_PATH);
     util_exit_on_error(-1);
   }
   closedir(dir);
@@ -157,7 +157,7 @@ int main() {
     socklen_t ct_addr_len = sizeof(struct sockaddr_in);
     ct_sock = accept(sv_sock, (struct sockaddr *) ct_addr, &ct_addr_len);
     if (ct_sock == -1) {
-      printf("...unable to accept request, errno: %d (%s)", errno, strerror(errno));
+      fprintf(stderr, "...unable to accept request, errno: %d (%s)", errno, strerror(errno));
       continue;
     } else {
       // set socket to non-block mode
